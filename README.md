@@ -15,6 +15,7 @@ Avg Mana: 2.4, RRs/Turn: 0.6
 0: 6.4%
 
 1: 19.3%, 2: 24.0%, 3: 28.8%, 4: 21.6%, 5+: 0.0%
+
 --
 ## Sorc W/ 1 RR (Bard, for example):
 
