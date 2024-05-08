@@ -1,6 +1,5 @@
 import random
 
-
 ### Nuts and Bolts: --------------------------------------
 ## roll a die
 def roll():
@@ -30,7 +29,24 @@ def iter_sim(*chars, iter = 100000, start_roll = 3):
         results.append(mana)
     avg = sum(results) / len(results)
     rravg = rerollcount / len(results)
-    return avg, rravg
+    zero_count = (results.count(0) / len(results)) * 100
+    one_count = (results.count(1) / len(results)) * 100
+    two_count = (results.count(2) / len(results)) * 100
+    three_count = (results.count(3) / len(results)) * 100
+    four_count = (results.count(4) / len(results)) * 100
+    five_plus_count = (len([i for i in results if i >= 5]) / len(results)) * 100
+
+    print(
+        "\nAvg Mana: ", round(avg, 1), ", RRs/Turn: ", round(rravg, 1),
+        "\n\nMana Gained:", 
+        "\n0: ", round(zero_count, 1),  "%",
+        "\n1: ", round(one_count, 1), "%",
+        ", 2: ", round(two_count, 1), "%",
+        ", 3: ", round(three_count, 1), "%",
+        ", 4: ", round(four_count, 1), "%",
+        ", 5+: ", round(five_plus_count, 1), "%",
+        sep = ""
+    )
 
 ### CHARACTERS: -------------------------------------------
 ## If yall want to add another character, just copy one of the ones here and change the if statements to match (the state variable is unused currently)
@@ -55,7 +71,7 @@ def sorc():
         state = "reroll"
         rerollcount = rerollcount + 1
 
-## Sorc with all mana sides set to 2
+## Sorc with all sides set to 2
 def sorc_2():
     global mana
     global rolls
@@ -68,32 +84,36 @@ def sorc_2():
         if rolls == 0:
             mana = mana + 2
     if r == 3:
-        rolls = rolls + 1
+        rolls = rolls + 2
         state = "reroll"
-        rerollcount = rerollcount + 1
+        rerollcount = rerollcount + 2
 
-## another character with a RR side
+## another character with a RR side (bard, for example)
 def otherroller():
     global rolls
+    global rerollcount
     r = roll()
     if r == 6:
         rolls = rolls + 1
+         rerollcount = rerollcount + 1
 
-## another character with a 2 RR side
-def otherroller_2():
+## Sphere with 2 (1)RR sides
+def sphere():
     global rolls
+    global rerollcount
     r = roll()
-    if r == 6:
-        rolls = rolls + 2
+    if r > 4:
+        rolls = rolls + 1
+        rerollcount = rerollcount + 1
 
 
 ## This is the code to test the characters ------------------------------------------------------------------------
-## iter = how many iterations to test, I recomend minimum 10k to have valid results
+## iter = how many iterations to test, I recomend minimum 10k to have valid results, but you only need to change if it takes too long
 iter_sim(sorc, iter = 1000000)
 
 iter_sim(sorc, otherroller, iter = 1000000)
 
-iter_sim(sorc, otherroller_2, iter = 1000000)
+iter_sim(sorc, sphere, iter = 1000000)
 
 iter_sim(sorc_2, iter = 1000000)
 
