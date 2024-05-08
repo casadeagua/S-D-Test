@@ -4,7 +4,7 @@ Find out the results of those wacky little dice!
 
 Code is in the "diceprobs.py" file
 
-Found using brute force, over 1 million iterations
+Found using brute force, 1 million iterations
 
 # Results:
 
