@@ -4,9 +4,11 @@ Find out the results of those wacky little dice!
 
 Code is in the "diceprobs.py" file
 
+Found using brute force, over 1 million iterations
+
 # Results:
 
-Each represent the percentage chacne of getting that amount of mana
+Each represent the percentage chance of getting that amount of mana
 AVG mana and AVG RRs are how many you can expect in a turn 
 This assumes you always roll until out of RRs and does count the extra you get if you end on a mana side
 
