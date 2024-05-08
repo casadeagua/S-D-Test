@@ -10,7 +10,7 @@ Code is in the "diceprobs.py" file
 
 Avg Mana: 2.4, RRs/Turn: 0.6
 
-### Mana Gained:
+* Mana Gained:
 
 0: 6.4%
 
@@ -21,7 +21,7 @@ Avg Mana: 2.4, RRs/Turn: 0.6
 
 Avg Mana: 3.0, RRs/Turn: 1.5
 
-### Mana Gained:
+* Mana Gained:
 
 0: 4.3%
 
@@ -32,7 +32,7 @@ Avg Mana: 3.0, RRs/Turn: 1.5
 
 Avg Mana: 3.9, RRs/Turn: 3.0
 
-### Mana Gained:
+* Mana Gained:
 
 0: 2.5%
 
@@ -43,7 +43,7 @@ Avg Mana: 3.9, RRs/Turn: 3.0
 
 Avg Mana: 5.7, RRs/Turn: 1.5
 
-### Mana Gained:
+* Mana Gained:
 
 0: 4.5%
 
@@ -54,7 +54,7 @@ Avg Mana: 5.7, RRs/Turn: 1.5
 
 Avg Mana: 3.0, RRs/Turn: 0.8
 
-### Mana Gained:
+* Mana Gained:
 
 0: 2.6%
 
