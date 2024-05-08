@@ -6,6 +6,9 @@ Code is in the "diceprobs.py" file
 
 # Results:
 
+Each represent the percentage chacne of getting that amount of mana
+AVG mana and AVG RRs are how many you can expect in a turn 
+This assumes you always roll until out of RRs and does count the extra you get if you end on a mana side
 
 | Left         											| 0 mana	| 1 mana	| 2 mana	| 3 mana	| 4 mana	| 5+ mana | AVG Mana | Avg RRs |
 | :------------------------------		| :----:	|	:----:	| :----:	|	:----:	|	:----:	|	:----:	| :----:	| :----:	|
