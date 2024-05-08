@@ -21,3 +21,8 @@ This assumes you always roll until out of RRs and does count the extra you get i
 | Sorc W/ Sphere										| 2.5% | 8.9% | 14.5% | 20.3% | 21.0% | 32.7% | 3.9 | 3.0 |
 | Sorc W/ 2 on each side						| 4.5% | 0.0% | 14.6% | 0.0% | 21.2% | 59.7% | 5.7 | 1.5 |
 | Sorc W/ 4 starting RRs 						| 2.6% | 11.6% | 21.1% | 25.9% | 25.9% | 13.0% | 3.0 | 0.8 |
+
+
+# Note!
+The averages with 2 characters is slightly inflated. 
+As written, it adds the mana when rerolls is 0 (like you locked dice), but if the other character rolls a reroll, it will add what they roll next too. This only happens 1/36 times, so shouldn't be too impactful, but I might come back and fix later.
